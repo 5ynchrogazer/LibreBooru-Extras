@@ -1,5 +1,6 @@
 [
   ".gitignore",
+  "README.md",
   "README.txt",
   "TODO.txt",
   "__init/session.php",
