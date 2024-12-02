@@ -13,3 +13,7 @@ CREATE TABLE post_reports (
     CONSTRAINT fk_post_reports_post_id FOREIGN KEY (post_id) REFERENCES posts(post_id) ON DELETE CASCADE,
     CONSTRAINT fk_post_reports_user_id FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
 );
+
+ALTER TABLE moderation_log
+CHANGE action action ENUM('delete_post','ban_user','approve_post','edit_tag','approve_post_report','reject_post_report')
+CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL;
