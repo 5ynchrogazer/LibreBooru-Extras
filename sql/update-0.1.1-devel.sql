@@ -8,6 +8,7 @@ CREATE TABLE post_reports (
     post_id INT NOT NULL,                     -- ID of the reported post
     user_id INT NOT NULL,                     -- ID of the user making the report
     reason VARCHAR(255) NOT NULL,             -- Reason for the report
+    status ENUM('reported', 'approved', 'rejected') DEFAULT 'reported', -- Status of the report
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, -- Time of the report
     CONSTRAINT fk_post_reports_post_id FOREIGN KEY (post_id) REFERENCES posts(post_id) ON DELETE CASCADE,
     CONSTRAINT fk_post_reports_user_id FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
