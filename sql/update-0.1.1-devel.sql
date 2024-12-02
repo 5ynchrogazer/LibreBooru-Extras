@@ -2,5 +2,3 @@
 ALTER TABLE posts
 ADD COLUMN parent_id INT, -- ID of the parent post
 ADD CONSTRAINT fk_parent_id FOREIGN KEY (parent_id) REFERENCES posts (post_id) ON DELETE SET NULL;
-
-ALTER TABLE favourites ADD test INT NOT NULL AFTER timestamp;
