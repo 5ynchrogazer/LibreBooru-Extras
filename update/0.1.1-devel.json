@@ -3,6 +3,7 @@
   "README.txt",
   "TODO.txt",
   "__init/session.php",
+  "__init/version.php",
   "functions.php",
   "locales/de.json",
   "public_html/api/update_software.php",
