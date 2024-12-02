@@ -6,13 +6,18 @@
   "__init/version.php",
   "functions.php",
   "locales/de.json",
+  "locales/en.json",
   "public_html/api/update_software.php",
   "public_html/assets/classic/Noto_Serif/NotoSerif-Italic.ttf",
   "public_html/assets/classic/Noto_Serif/NotoSerif-Regular.ttf",
   "public_html/assets/classic/Noto_Serif/OFL.txt",
   "public_html/assets/classic/Noto_Serif/README.txt",
   "public_html/assets/classic/main.css",
+  "public_html/admin.php",
   "public_html/posts.php",
+  "templates/classic/admin.tpl",
+  "templates/classic/pages/account_index.tpl",
   "templates/classic/pages/posts_index.tpl",
-  "templates/classic/parts/footer.tpl"
+  "templates/classic/parts/footer.tpl",
+  "templates/classic/parts/menu.tpl"
 ]
