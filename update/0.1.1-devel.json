@@ -26,5 +26,7 @@
   "templates/classic/pages/posts_index.tpl",
   "templates/classic/parts/footer.tpl",
   "templates/classic/parts/menu.tpl",
-  "templates/classic/posts.tpl"
+  "templates/classic/posts.tpl",
+  "public_html/install.php",
+  "templates/classic/parts/header.tpl"
 ]
