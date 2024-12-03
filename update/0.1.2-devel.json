@@ -1,0 +1,14 @@
+[
+  "locales/en.json",
+  "public_html/account.php",
+  "public_html/admin.php",
+  "public_html/assets/classic/main.css",
+  "public_html/posts.php",
+  "README.md",
+  "README.txt",
+  "templates/classic/account.tpl",
+  "templates/classic/admin.tpl",
+  "templates/classic/extra.tpl",
+  "templates/classic/pages/account_profile.tpl",
+  "templates/classic/parts/menu.tpl"
+]
