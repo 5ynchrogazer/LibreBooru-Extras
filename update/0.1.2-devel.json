@@ -3,6 +3,7 @@
   "public_html/account.php",
   "public_html/admin.php",
   "public_html/assets/classic/main.css",
+  "public_html/assets/classic/js/main.js",
   "public_html/posts.php",
   "README.md",
   "README.txt",
@@ -10,5 +11,6 @@
   "templates/classic/admin.tpl",
   "templates/classic/extra.tpl",
   "templates/classic/pages/account_profile.tpl",
+  "templates/classic/pages/posts_view.tpl",
   "templates/classic/parts/menu.tpl"
 ]
