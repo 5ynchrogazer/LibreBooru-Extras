@@ -27,3 +27,45 @@ CREATE TABLE
         CONSTRAINT fk_reputation_giver_id FOREIGN KEY (giver_id) REFERENCES users (user_id) ON DELETE CASCADE,
         CONSTRAINT fk_reputation_deleted_by FOREIGN KEY (deleted_by) REFERENCES users (user_id) ON DELETE SET NULL
     );
+
+ALTER TABLE users
+ADD COLUMN default_rating ENUM (
+    'all',
+    'safe',
+    'safequestionable',
+    'safeexplicit',
+    'questionable',
+    'questionableexplicit',
+    'explicit'
+) DEFAULT 'safequestionable';
+
+ALTER TABLE users
+ADD COLUMN tag_blacklist TEXT DEFAULT NULL;
+
+CREATE TABLE
+    comment_votes (
+        id INT AUTO_INCREMENT PRIMARY KEY, -- Unique ID for each vote
+        comment_id INT NOT NULL, -- ID of the related comment
+        user_id INT NOT NULL, -- ID of the user voting
+        vote TINYINT NOT NULL, -- The vote value (e.g., 1 for upvote, -1 for downvote)
+        CONSTRAINT fk_comment_votes_comment_id FOREIGN KEY (comment_id) REFERENCES comments (comment_id) ON DELETE CASCADE,
+        CONSTRAINT fk_comment_votes_user_id FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE
+    );
+
+CREATE TABLE
+    comment_reports (
+        report_id INT AUTO_INCREMENT PRIMARY KEY, -- Unique ID for each report
+        comment_id INT NOT NULL, -- ID of the related comment
+        user_id INT NOT NULL, -- ID of the user reporting the comment
+        reason VARCHAR(255) NOT NULL, -- Reason for the report
+        status ENUM ('reported', 'approved', 'rejected') DEFAULT 'reported', -- Status of the report
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, -- Time the report was created
+        CONSTRAINT fk_comment_reports_comment_id FOREIGN KEY (comment_id) REFERENCES comments (comment_id) ON DELETE CASCADE,
+        CONSTRAINT fk_comment_reports_user_id FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE
+    );
+
+ALTER TABLE wiki
+ADD COLUMN kofi VARCHAR(255) DEFAULT NULL;
+
+ALTER TABLE wiki_history
+ADD COLUMN kofi VARCHAR(255) DEFAULT NULL;
