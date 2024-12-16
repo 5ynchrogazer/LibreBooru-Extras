@@ -30,6 +30,7 @@
   "public_html/assets/userbars/visitor2.ttf",
   "public_html/extra.php",
   "public_html/install.php",
+  "public_html/linkfilter.php",
   "public_html/posts.php",
   "public_html/wiki.php",
   "templates/classic/account.tpl",
