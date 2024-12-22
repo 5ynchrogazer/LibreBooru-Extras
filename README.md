@@ -4,8 +4,6 @@ Extras for LibreBooru. For details, [refer to the Wiki](https://github.com/5ynch
 
 ## Update Instructions
 
-### 0.2.0-devel
-
 ### 0.1.2-devel
 
 If a user should be eligble to add reputation to someone else, add the value "judge" to their permissions value in the DB.

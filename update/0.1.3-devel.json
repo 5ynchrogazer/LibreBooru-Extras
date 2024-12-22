@@ -1,0 +1,16 @@
+[
+    "__init/language.php",
+    "__init/smarty.php",
+    "locales/de.json",
+    "locales/en.json",
+    "public_html/admin.php",
+    "public_html/api/update_software.php",
+    "public_html/index.php",
+    "public_html/install.php",
+    "templates/classic/extra.tpl",
+    "templates/classic/index.tpl",
+    "templates/classic/pages/posts_view.tpl",
+    "templates/classic/parts/footer.tpl",
+    "README.md",
+    "README.txt"
+]
