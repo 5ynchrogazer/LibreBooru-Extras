@@ -1,8 +1,10 @@
-# OpenBooru-Extras
+# LibreBooru-Extras
 
-Extras for OpenBooru. For details, [refer to the Wiki](https://github.com/5ynchrogazer/OpenBooru-Extras/wiki). Update instructions below.
+Extras for LibreBooru. For details, [refer to the Wiki](https://github.com/5ynchrogazer/LibreBooru-Extras/wiki). Update instructions below.
 
 ## Update Instructions
+
+### 0.2.0-devel
 
 ### 0.1.2-devel
 
